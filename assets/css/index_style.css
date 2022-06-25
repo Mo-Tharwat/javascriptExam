@@ -1,0 +1,95 @@
+*
+{
+	font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+    scroll-behavior: smooth;
+}
+body{
+     background-color: #000000f2;
+}
+aside{
+    width:auto;
+    z-index:1;
+    right:calc(100vw - 75px);
+    transition: 1s all;
+}
+.showAside{
+    right:calc(100vw - 75px - 280px);
+}
+#homeSection aside .navHeader{
+    width: 60px;
+    background-color:#F8F6F6;
+    /* z-index:2; */
+}
+#homeSection aside .navBody{
+    width: 280px;
+    overflow: hidden;
+    background-color: #000000f2;
+    /* transition: 1s all; */
+    /* display: none; */
+    /* z-index: 2; */
+}
+#homeSection aside .navHeader .strip-toggel-menu #iconFA{
+    cursor: pointer;
+}
+/* #homeSection aside .navHeader .strip-toggel-menu a .iconFA::before{
+    content: attr( data-icon);
+    font-family:var(--fa-style-family,"Font Awesome 6 Free");
+	font: var(--fa-font-solid);
+    font-weight: 900;
+} */
+#homeSection .nav-item{
+    transition:.5s;
+}
+#homeSection .nav-item:hover{
+    color:#dc3545 !important;
+}
+#homeSection .socialIcon{
+    transition:.5s;
+}
+#homeSection .socialIcon:hover{
+    color:#dc3545 !important;
+}
+ul{
+    list-style-type:none ;
+}
+
+/* --------------------------- Movies --------------------------- */
+#movies{
+    /* height: 100vh; */
+    margin: auto;
+    margin-right: 60px;
+    /* background-color:blue; */
+}
+#movies figure .layer{
+    top:100%;
+    left:0;
+    right:0;
+    transition: 1s all;
+}
+#movies figure:hover .layer{
+    top: 0;
+    /* transition: .5s all; */
+} 
+#movies .layer{
+    background-color:rgba(255,255,255,.7);
+}
+#movies .layer .info{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 0.75rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    font-weight: 800 !important;
+    color:black !important;
+}
+/* --------------------------- Contact Us --------------------------- */
+
+.ContactUs{
+    width: auto;
+    margin: auto;
+    margin-right: 60px;
+    /* height: 100vh; */
+    margin-bottom: 5rem;
+}

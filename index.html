@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- libraries -->
+        <link rel="stylesheet" href="./assets/css/libraries.css">
+        <!-- Index Style Sheet -->
+        <link rel="stylesheet" href="./assets/css/index_style.css">
+        <title>Javascript exam</title>
+    </head>
+    <body>
+        <!-- ----------------- Home Section ----------------- -->
+        <section class="homeSection bg-danger position-relative mt-0" id="homeSection">
+            <!-- ----------------- SideBar ----------------- -->
+            <aside class="d-flex position-fixed top-0 bottom-0">
+                <!-- ----------------- SideBar Body ----------------- -->
+                <div class="navBody vh-100 position-relative" id="navBody">
+                    <!-- Items sideBar -->
+                    <div class="nav-list d-flex flex-column align-items-center">
+                        <ul>
+                            <li id="nowPlaying" class="item1 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#">Now playing</a>
+                            </li>
+                            <li id="popular" class="item2 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#">Popular</a>
+                            </li>
+                            <li id="topRated" class="item3 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#">Top Rated</a>
+                            </li>
+                            <li id="trending" class="item5 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#">Trending</a>
+                            </li>
+                            <li id="upComing" class="item6 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#">Upcoming</a>
+                            </li>
+                            <li id="contactUs" class="item6 navItem" style="opacity: 0; padding-top: 500px;">
+                                <a class="nav-item text-decoration-none text-light" href="#contactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Footer -->
+                    <div class="nav-social-item position-absolute bottom-0 my-5 text-center">
+                        <a href="#"><i class=" socialIcon fab fa-facebook-f me-4 text-light"></i></a>
+                        <a href="#"><i class="socialIcon fab fa-twitter me-4 text-light"></i></a>
+                        <a href="#"><i class="socialIcon fas fa-globe me-4 text-light"></i></a>
+                        <div class="pt-3 text-light">
+                            <span>Copyright Â© 2019 All Rights Reserved.</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ----------------- SideBar Header ----------------- -->
+                <div class="navHeader vh-100 d-flex flex-column align-items-center" id="navHeader">
+                    <div class="log w-100 my-2">
+                        <figure class="w-50 m-auto">
+                            <img class="img-fluid" src="./assets/img/logo.png" alt="Log">
+                        </figure>
+                    </div>
+                    <div class="strip-toggel-menu m-auto">
+                        <!-- <a class="text-decoration-none text-dark" href="#"> -->
+                            <!-- <i class="iconFA" data-icon="&#Xf039"></i> -->
+                            <i id="iconFA" class="fa-solid fa-align-justify"></i>
+                            <!-- <i class="fa-solid fa-xmark"></i> -->
+                        <!-- </a> -->
+                        <!-- class="fa-solid fa-align-justify" -->
+                    </div>
+                    <div class="socialIcons">
+                        <div class="global">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                        <div class="share">
+                            <a class="text-decoration-none text-dark" href="#">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <!-- ----------------- Movies Section ----------------- -->
+        <section class="movies w-75" id="movies">
+            <div class="inputsSearch form-control input-group bg-dark my-3 ">
+                <input id="searchOnAPI" class="form-control mx-1 bg-dark text-light" type="text" placeholder="Get movies by word from - API">
+                <input id="searchArray" class="form-control mx-1 bg-dark text-light" type="text" placeholder="Search">
+            </div>
+            <!-- -------------- Search Field -------------- -->
+            <div class="searchField">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <figure class="position-relative rounded-1 overflow-hidden">
+                                <img class="w-100 rounded-1" src="./assets/img/test.jpg" alt="testimg">
+                                <div class="layer position-absolute rounded-1 w-100 h-100">
+                                    <div class="info p-4 text-center m-0">
+                    
+                                        <h2>Memory</h2>
+                                        <p>Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.</p>
+                                        <p>rate: 7.4</p>
+                                        <p>2022-04-28</p>
+                                        
+                                    </div>
+                                </div>
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------- Search API -------------- -->
+            <div class="serachAPI">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <figure class="position-relative rounded-1 overflow-hidden">
+                                <img class="w-100 rounded-1" src="./assets/img/test.jpg" alt="testimg">
+                                <div class="layer position-absolute rounded-1 w-100 h-100">
+                                    <div class="info p-4 text-center m-0">
+                    
+                                        <h2>Memory</h2>
+                                        <p>Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.</p>
+                                        <p>rate: 7.4</p>
+                                        <p>2022-04-28</p>
+                                        
+                                    </div>
+                                </div>
+                            </figure>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <figure class="position-relative rounded-1 overflow-hidden">
+                                <img class="w-100 rounded-1" src="./assets/img/test.jpg" alt="testimg">
+                                <div class="layer position-absolute rounded-1 w-100 h-100">
+                                    <div class="info p-4 text-center m-0">
+                    
+                                        <h2>Memory</h2>
+                                        <p>Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.</p>
+                                        <p>rate: 7.4</p>
+                                        <p>2022-04-28</p>
+                                        
+                                    </div>
+                                </div>
+                            </figure>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <figure class="position-relative rounded-1 overflow-hidden">
+                                <img class="w-100 rounded-1" src="./assets/img/test.jpg" alt="testimg">
+                                <div class="layer position-absolute rounded-1 w-100 h-100">
+                                    <div class="info p-4 text-center m-0">
+                    
+                                        <h2>Memory</h2>
+                                        <p>Alex, an assassin-for-hire, finds that he's become a target after he refuses to complete a job for a dangerous criminal organization. With the crime syndicate and FBI in hot pursuit, Alex has the skills to stay ahead, except for one thing: he is struggling with severe memory loss, affecting his every move. Alex must question his every action and whom he can ultimately trust.</p>
+                                        <p>rate: 7.4</p>
+                                        <p>2022-04-28</p>
+                                        
+                                    </div>
+                                </div>
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- Contact us ----------------- -->
+        <section class="ContactUs w-75 mt-4 text-light" id="contactUs">
+            <h4>ContacUs...</h4>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="name" placeholder="Enter Your Name" >
+                        <div class="alert alert-danger d-none" id="namealert" ></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="email" placeholder="Enter Email" >
+                        <div class="alert alert-danger d-none" id="emailalert"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="phone" placeholder="Enter phone">
+                        <div class="alert alert-danger d-none" id="phonealert"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="age" placeholder="Enter Age">
+                        <div class="alert alert-danger d-none" id="agealert"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" type="password" id="password" placeholder="Enter Password">
+                        <div class="alert alert-danger d-none" id="passwordalert"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+                        <div class="alert alert-danger d-none" id="repasswordalert">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" id="submitBtn" class="btn btn-outline-danger form-control">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- main javascript -->
+        <script type="module" src="./assets/js/main.js"></script>
+    </body>
+</html>
